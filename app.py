@@ -8,7 +8,7 @@ logging.basicConfig(filename='/var/log/flask-app/app.log', level=logging.INFO)
 @app.route('/')
 def hello_world():
     app.logger.info(f"Received a request from {request.remote_addr}")
-    return 'Hello, World from Flask!'
+    return 'Hello, World from Flask with logging!'
 
 
 if __name__ == '__main__':
