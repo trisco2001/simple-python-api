@@ -2,7 +2,7 @@ import logging
 from flask import Flask, request
 
 app = Flask(__name__)
-logging.basicConfig(filename='/var/log/flask-app/app.log', level=logging.INFO)
+logging.basicConfig(filename='/opt/app-root/logs/app.log', level=logging.INFO)
 
 
 @app.route('/')
