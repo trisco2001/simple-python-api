@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "simple-python-api"
+version = "0.1.0"
+description = "Hello world API"
+authors = ["Tristan Leonard <tristanl@slalom.com>"]
+readme = "README.md"
+packages = [{include = "app"}]
+
+[tool.poetry.scripts]
+app = "app:app"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+Flask = "^3.0.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
