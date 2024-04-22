@@ -4,10 +4,10 @@ version = "0.1.0"
 description = "Hello world API"
 authors = ["Tristan Leonard <tristanl@slalom.com>"]
 readme = "README.md"
-packages = [{include = "app"}]
+packages = []
 
 [tool.poetry.scripts]
-app = "app:app"
+app = "app"
 
 [tool.poetry.dependencies]
 python = "^3.11"
